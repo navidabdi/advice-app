@@ -13,18 +13,25 @@ body {
   justify-content: center;
   align-items: center;
   text-align: center;
+  overflow-x: hidden;
+}
+.app {
+  position: relative;
 }
 .card {
-  background: rgba(255, 255, 255, 0.5);
+  background: rgba(255, 255, 255, 0.4);
   backdrop-filter: blur(0.5rem);
   min-width: 50%;
   max-width: 90%;
   margin: auto;
   border-radius: 25px;
-  padding: 3rem 4rem;
+  padding: 4rem 2rem;
+  z-index: 1;
 }
 .heading {
-  line-height: 3rem;
+  line-height: 4rem;
+  font-size: 2.5rem;
+  display: inline-block;
 }
 .button {
   font-size: 1.1rem;
@@ -36,4 +43,24 @@ body {
   cursor: pointer;
   text-transform: uppercase;
   background-color: rgba(255, 255, 255, 0.5);
+}
+.slip-id {
+  position: absolute;
+  font-size: 20rem;
+  font-weight: 900;
+  color: #000;
+  opacity: 0.8;
+  z-index: 0;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+@media (max-width: 768px) {
+  .heading {
+    font-size: 2rem;
+    line-height: 3rem;
+  }
+  .slip-id {
+    font-size: 13rem;
+  }
 }
