@@ -20,8 +20,9 @@ class App extends React.Component {
   };
   render() {
     return (
-      <div className="App">
-        <h1>{this.state.advice}</h1>
+      <div className="card">
+        <h1 className="heading">{this.state.advice}</h1>
+        <button className="button">GIVE ME ADVICE!</button>
       </div>
     );
   }
