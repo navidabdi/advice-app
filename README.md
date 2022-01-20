@@ -1,3 +1,3 @@
 # Advice App
 Demo:
-https://eager-jackson-bd955a.netlify.app/
+https://advice-app-1.netlify.app/
